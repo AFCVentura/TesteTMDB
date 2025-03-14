@@ -12,7 +12,7 @@ public partial class GridPage : ContentPage
 
     public async void OnSubmit(object sender, EventArgs e)
     {
-        string url = $"https://api.themoviedb.org/3/search/movie?query={FilmName.Text}&api_key=89cca6eda8aa59f4040823111ab90dab&include_adult=false&language=en-US&page=1";
+        string url = $"https://api.themoviedb.org/3/search/movie?query={FilmName.Text}&api_key=&include_adult=false&language=en-US&page=1";
         var result = await FetchTMDBAPI(url);
         ShowFilms(result);
     }
