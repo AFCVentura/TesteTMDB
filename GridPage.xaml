@@ -6,10 +6,10 @@
 
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="60" />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="40"  />
+            <RowDefinition Height="500" />
+            <RowDefinition Height="500" />
+            <RowDefinition Height="500" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
