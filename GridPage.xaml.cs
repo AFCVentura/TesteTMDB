@@ -12,7 +12,7 @@ public partial class GridPage : ContentPage
 
     public async void OnSubmit(object sender, EventArgs e)
     {
-        string url = $"https://api.themoviedb.org/3/search/movie?query={FilmName.Text}&api_key=89cca6eda8aa59f4040823111ab90dab&include_adult=false&language=en-US&page=1";
+        string url = $"https://api.themoviedb.org/3/search/movie?query={FilmName.Text}&api_key=&include_adult=false&language=en-US&page=1";
         var result = await FetchTMDBAPI(url);
         ShowFilms(result);
     }
@@ -43,7 +43,7 @@ public partial class GridPage : ContentPage
             Grid.SetColumn(label, column);
             MainGrid.Children.Add(label);
 
-            // Atualiza a posição para a próxima célula
+            // Atualiza a posiÃ§Ã£o para a prÃ³xima cÃ©lula
             column++;
             if (column >= 3) // 3 colunas
             {
@@ -51,7 +51,7 @@ public partial class GridPage : ContentPage
                 row++;
             }
 
-            // Para se não houver mais linhas disponíveis
+            // Para se nÃ£o houver mais linhas disponÃ­veis
             if (row >= 4) // 4 linhas no total
                 break;
         }
