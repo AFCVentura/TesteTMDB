@@ -4,7 +4,7 @@
              x:Class="Aula2Rogerio.GridPage"
              Title="GridPage">
 
-    <Grid>
+    <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
             <RowDefinition />
@@ -30,9 +30,6 @@
             <Button Grid.Column="2" Clicked="OnSubmit"></Button>
         </Grid>
 
-        <StackLayout x:Name="FilmsStack">
-
-        </StackLayout>
 
 
     </Grid>
